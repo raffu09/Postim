@@ -3,6 +3,7 @@ import sys
 from PIL import Image
 from numpy import asarray
 import pickle
+import os
 
 from keras.models import Sequential
 #Import from keras_preprocessing not from keras.preprocessing
@@ -24,8 +25,8 @@ image = Image.open(sampleImage)
 img_resized = image.resize((256,256))
 data = asarray(img_resized)/255.0 # rgb 0 - 255 to 0 - 1
 
-
-model = load_model("Models\\" + "postim_weights.h5")
+modelFile = os.path.join("Models", "postim_weights.h5")
+model = load_model(modelFile)
 
 y = model.predict(data.reshape(1, 256, 256, 3))  # data reshape for a single image
 
