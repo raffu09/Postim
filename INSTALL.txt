@@ -6,7 +6,9 @@ for your OS. At the time of writing this, python 3.8 does not work with
 keras. Using python 3.6.9 instead.
 
 o Install Python
-  pyenv install 3.6.9
+  $ brew install pyenv
+  $ pyenv install 3.6.9
+  $ pyenv global 3.6.9
 
 o Virtualenv
   $ git clone git@github.com:raffu09/Postim.git
