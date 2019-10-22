@@ -1,0 +1,33 @@
+Installation
+============
+
+For installation, MacOS Catalina is used as a reference. Adapt the instructions
+for your OS. At the time of writing this, python 3.8 does not work with
+keras. Using python 3.6.9 instead.
+
+o Install Python
+  $ brew install pyenv
+  $ pyenv install 3.6.9
+  $ pyenv global 3.6.9
+
+o Virtualenv
+  $ git clone git@github.com:raffu09/Postim.git
+  $ python -m venv Postim
+  $ cd Postim
+  $ . ./bin/activate
+
+o Dependencies
+  $ pip install requests
+  $ pip install keras
+  $ pip install tensorflow
+  $ pip install pandas
+  $ pip install matplotlib
+  $ pip install pillow
+
+o Running
+  - Download images
+    $ python Download.py
+  - Train network
+    $ python Train.py
+  - Predict
+    $ python Predict.py samples/1809.jpg

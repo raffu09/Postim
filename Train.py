@@ -128,7 +128,7 @@ def draw_stats():
         
         
     plt.plot( history_callback.history["loss"], color='blue', label='loss')
-    plt.plot( history_callback.history["acc"], color='red', label='accuracy')
+    plt.plot( history_callback.history["accuracy"], color='red', label='accuracy')
     #plt.plot( best_val_loss_history.history["mean_absolute_error"], color='red', label='accuracy (mae)')
     #plt.plot( best_val_loss_history.history["val_loss"], color='magenta', label='val_loss')
     #plt.plot( best_val_loss_history.history["val_mean_absolute_error"], color='green', label='val_acc (mae)')
